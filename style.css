@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans Mono", monospace;
+}
+body {
+  height: 100vh;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card-Main {
+  width: 80vw;
+  height: 80vh;
+  background-color: #ffffff;
+  border-radius: 0 32px 32px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 12px 12px rgb(16, 16, 16, 0.2);
+}
+
+.Card-Image {
+  height: 100%;
+  width: 48%;
+  background-image: url(./Images/pexels-sassu-anas-690816.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 32px 0 0;
+  box-shadow: 12px 12px rgb(16, 16, 16, 0.2);
+}
+
+.Card-Description {
+  width: 52%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Description-Wrapper {
+  width: 96%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Item-Name {
+  font-size: 24px;
+  color: #080808;
+}
+
+.Item-Description {
+  font-size: 16px;
+  color: #969696;
+}
+
+.Item-Price {
+  font-weight: 500;
+  color: #080808;
+  font-size: 32px;
+}
+
+.Seller-Rating {
+  width: 96px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 32px;
+}
+
+@media (max-width: 700px) {
+  .Card-Main {
+    flex-direction: column;
+    height: 88vh;
+  }
+  .Card-Image {
+    width: 100%;
+    height: 40vh;
+    border-radius: 0 32px 32px 32px;
+  }
+  .Card-Description {
+    width: 96%;
+    height: 48%;
+  }
+  .Description-Wrapper {
+    width: 96%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
